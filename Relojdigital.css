@@ -1,0 +1,105 @@
+html{
+  display: flex;
+  flex-flow: row nowrap;  
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height:20%;
+  margin: 0;
+  padding: 50;
+  align-items: center;
+}
+body {
+  background-color: #222244;
+  width: 800px;
+  height: 50px;
+  align-items: center;
+}
+.ball {
+	display: flex;
+	width: 80px;
+	height: 80px;
+padding: 2px;
+margin: 15px;
+border-radius: 50%;
+}
+.bc{background-color: rgba(0,55,55,0.6);
+  width: 790px;
+  height: 415px;
+  display: grid;
+  column-gap: 45px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  border-radius: 5%;
+  box-shadow: 2px 2px 30px 15px rgba(0,255,255,0.6);            
+  border-width: 4px;
+  border-style: solid;
+  border-color: #8badeb;
+}
+.par{
+  display: grid;
+  column-gap: 2px;
+  grid-template-columns: auto auto;
+}
+.col{
+  column-gap: 12px;
+  row-gap: 40px;
+  grid-template-columns: auto auto auto auto;
+}
+.b1 {
+  background-color: rgb(38, 38, 75);
+	box-shadow: inset -25px -15px 40px rgba(0,0,0,.3);
+	background-image: radial-gradient(circle at 65% 30%, white 3px, aqua 5%,
+  darkblue 60%, darkblue 70%, rgb(11, 99, 182) 0%), 0%;
+}
+.b2 {
+  background: radial-gradient(circle at 65% 30%, white 3px, aqua 5%,
+   darkblue 60%, darkblue 70%, rgb(11, 99, 182) 95%), 100%; 
+   box-shadow: 2px 1px 15px 8px rgba(0,255,255,0.96); 
+   animation-name: glow;
+    animation-duration: 1s;
+  }
+  @keyframes glow {
+    from { box-shadow: 2px 1px 15px 8px rgba(0,255,255,0.0);
+    }
+    to { box-shadow: 2px 1px 15px 8px rgba(0,255,255,0.96);
+    }
+  }
+      .rdn{
+        visibility: hidden;
+        align-items: center;
+        display: grid;
+        grid-template-columns:auto auto auto auto auto auto;
+        column-gap: 5px;
+        background-color: black;
+        padding: 20px;
+        padding-right: -10px;
+        border-radius:50px 50px 50px 50px;
+        box-shadow: #0eff00;
+      }
+      .b6{
+      visibility: hidden;
+        font: 30px monospace;
+        color: #0eff00;
+        width: 20px;
+        word-break: break-all;
+      }
+      .bl{
+        text-align: center;
+      color: antiquewhite;
+      font-size: 20pt;
+      }
+      .bs{
+        text-align: center;
+        color: antiquewhite;
+        font-family: cursive;
+        font-size: 10pt;
+        margin-top: -14px;
+        margin-bottom: 20px;
+      }
+      .bh{
+        text-align: center;
+      color: #0eff00;
+      font-size: 30pt;
+      visibility: hidden;
+      }
